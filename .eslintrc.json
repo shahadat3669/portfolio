@@ -1,9 +1,5 @@
 {
-  "extends": [
-    "airbnb-base",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["airbnb-base", "next/core-web-vitals", "plugin:prettier/recommended"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -16,12 +12,7 @@
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
-      "plugins": [
-        "@typescript-eslint",
-        "unused-imports",
-        "tailwindcss",
-        "simple-import-sort"
-      ],
+      "plugins": ["@typescript-eslint", "unused-imports", "tailwindcss", "simple-import-sort"],
       "extends": [
         "plugin:tailwindcss/recommended",
         "airbnb",
@@ -47,22 +38,14 @@
         "react/jsx-props-no-spreading": "off",
         "@typescript-eslint/comma-dangle": "off",
         "@typescript-eslint/consistent-type-imports": "error",
-        "no-restricted-syntax": [
-          "error",
-          "ForInStatement",
-          "LabeledStatement",
-          "WithStatement"
-        ],
+        "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
         "import/prefer-default-export": "off",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
         "import/order": "off",
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
-        "unused-imports/no-unused-vars": [
-          "error",
-          { "argsIgnorePattern": "^_" }
-        ]
+        "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
       }
     }
   ]
