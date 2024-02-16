@@ -6,7 +6,7 @@ import { Josefin_Sans, Montserrat, Open_Sans } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import { cn } from '@/libs/utils';
 
-import { Providers } from './provider';
+import Providers from './provider';
 
 const josefinSans = Josefin_Sans({ subsets: ['latin'], display: 'swap', variable: '--font-josefin-sans' });
 const openSans = Open_Sans({ subsets: ['latin'], display: 'swap', variable: '--font-open-sans' });
