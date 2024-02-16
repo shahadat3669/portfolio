@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.c-toggle {
+  box-shadow:
+    inset 0px 1px 3px rgba(0, 0, 0, 0.4),
+    inset 0px -1px 3px rgba(255, 255, 255, 0.4);
+}
+.c-toggle--bg-light {
+  @apply bg-[#ebebeb];
+}
+.c-toggle--bg-dark {
+  @apply bg-[#242424];
+}
+.c-toggle--light {
+  @apply bg-gradient-to-r from-[#ffcc89] to-[#d8860b];
+}
+.c-toggle--dark {
+  @apply bg-gradient-to-b from-[#777] to-[#3a3a3a];
+}
