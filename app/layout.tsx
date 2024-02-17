@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           openSans.variable,
           josefinSans.variable,
           montserrat.variable,
-          'text-[#7d7789] font-normal bg-[#f4f5fe] text-lg w-full overflow-x-hidden font-open-sans leading-[1.7] break-words relative'
+          'text-[#7d7789] font-normal bg-[#f4f5fe] text-lg w-full overflow-x-hidden font-open-sans leading-[1.7] break-words relative dark:text-[#ffffff] dark:bg-[#3c3c3c]'
         )}>
         <Providers>
           <Navbar />

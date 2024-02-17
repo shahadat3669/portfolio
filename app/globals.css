@@ -19,3 +19,7 @@
 .c-toggle--dark {
   @apply bg-gradient-to-b from-[#777] to-[#3a3a3a];
 }
+
+.c-input--shadow {
+  box-shadow: 13px 13px 21px rgba(131, 4, 4, 0.05);
+}

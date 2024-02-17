@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -15,7 +16,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
   darkMode: 'class',
 };
 export default config;
