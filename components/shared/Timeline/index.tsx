@@ -1,19 +1,14 @@
 import React from 'react';
 import type { IconType } from 'react-icons';
 
+import type { ResumeListItemProps } from '@/libs/data';
+
 import TimelineList from './TimelineList';
 
 type TimelineProps = {
   timelineTitle: string;
   timelineListIcon: IconType;
-  timelineList: {
-    id: number;
-    listItemTitle: string;
-    listItemSubtitle: string;
-    listItemDuration?: string;
-    listItemLink?: string;
-    listItemDescription?: string;
-  }[];
+  timelineList: ResumeListItemProps[];
 };
 
 const Timeline = ({ timelineTitle, timelineListIcon, timelineList }: TimelineProps) => {
