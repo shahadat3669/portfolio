@@ -23,3 +23,11 @@
 .c-input--shadow {
   box-shadow: 13px 13px 21px rgba(131, 4, 4, 0.05);
 }
+
+.c-title-marker {
+  @apply relative pl-8;
+}
+.c-title-marker::before {
+  @apply absolute top-1/2 left-0 -translate-y-1/2 w-7 bg-[#ea4343] h-1;
+  content: '';
+}
