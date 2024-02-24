@@ -1,5 +1,6 @@
 import ContactSection from '@/components/contact-section/ContactSection';
 import CounterSection from '@/components/counter-section/CounterSection';
+import ResumeSection from '@/components/resume-section/ResumeSection';
 import SkillsSection from '@/components/skills-section/SkillsSection';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <CounterSection />
       <ContactSection />
       <SkillsSection />
+      <ResumeSection />
     </main>
   );
 }
