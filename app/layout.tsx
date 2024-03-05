@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Josefin_Sans, Montserrat, Open_Sans } from 'next/font/google';
 
+import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/Navbar';
 import { cn } from '@/libs/utils';
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
