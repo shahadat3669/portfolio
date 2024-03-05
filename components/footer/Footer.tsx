@@ -5,7 +5,7 @@ import { LiaGithub, LiaLinkedinIn, LiaTwitter } from 'react-icons/lia';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3c3c3c] py-24 text-white dark:bg-[#333232]">
+    <footer className="bg-[#3c3c3c] pb-2 pt-24 text-white dark:bg-[#333232]">
       <div className="container relative mx-auto flex flex-col gap-16 px-4">
         <Link
           className="group/chevron-container absolute -top-44 right-0 hidden h-36 w-20 cursor-pointer items-center justify-center bg-[#ea4343] lg:block"
@@ -47,6 +47,14 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <p className="text-right text-xs">
+          ©{' '}
+          <Link className="hover:text-[#ea4343]" href="https://github.com/shahadat3669" target="_blank">
+            Shahadat
+          </Link>
+          {' | '}
+          2024
+        </p>
       </div>
     </footer>
   );
