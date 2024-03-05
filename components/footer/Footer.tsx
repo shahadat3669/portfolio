@@ -47,13 +47,12 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <p className="text-right text-xs">
-          ©{' '}
+        <p className="text-left text-xs">
+          Copyright © 2023 - 2024{' '}
           <Link className="hover:text-[#ea4343]" href="https://github.com/shahadat3669" target="_blank">
             Shahadat
           </Link>
-          {' | '}
-          2024
+          , Bangladesh. All rights reserved
         </p>
       </div>
     </footer>
