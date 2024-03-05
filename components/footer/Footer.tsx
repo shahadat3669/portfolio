@@ -1,11 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaChevronUp } from 'react-icons/fa6';
 import { LiaGithub, LiaLinkedinIn, LiaTwitter } from 'react-icons/lia';
 
 const Footer = () => {
   return (
     <footer className="bg-[#3c3c3c] py-24 text-white dark:bg-[#333232]">
       <div className="container relative mx-auto flex flex-col gap-16 px-4">
+        <Link
+          className="group/chevron-container absolute -top-44 right-0 hidden h-36 w-20 cursor-pointer items-center justify-center bg-[#ea4343] lg:block"
+          href="/">
+          <FaChevronUp className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-linear group-hover/chevron-container:-mt-1" />
+          <FaChevronUp className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-linear group-hover/chevron-container:mt-1" />
+        </Link>
         <div className="flex flex-col justify-between gap-8 md:flex-row">
           <div className="relative max-w-xs">
             <Image width={108} height={51} className="w-full" src="/images/logo/logo-dark.svg" alt="Your Company" />
