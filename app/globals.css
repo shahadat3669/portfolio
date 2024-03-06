@@ -31,3 +31,13 @@
   @apply absolute top-1/2 left-0 -translate-y-1/2 w-7 bg-[#ea4343] h-1;
   content: '';
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(5px);
+  }
+}
